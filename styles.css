@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: aqua;
+  display: flex;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-container {
+  height: 100vh;
+  width: 20%;
+  background-color: blueviolet;
+}
+
+.header-container {
+  height: 20%;
+  width: 100%;
+  background-color: chartreuse;
+}
+
+
+.contents-container {
+  background-color: darkgoldenrod;
+}
