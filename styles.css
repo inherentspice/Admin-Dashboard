@@ -1,3 +1,10 @@
+:root {
+  --color-yellow: #FACC15;
+  --color-blue: #1992D4;
+  --color-grey: #E2E8F0;
+  --color-white: #FFFFFF;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -20,19 +27,44 @@ main {
 .sidebar-container {
   height: 100vh;
   width: 20%;
-  background-color: #1992D4;
-  color: #FFFFFF;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 1rem;
 }
 
 .header-container {
   height: 20%;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: var(--color-white);
 }
 
 
 .contents-container {
   height: 100%;
   width: 100%;
-  background-color: #E2E8F0;
+  background-color: var(--color-grey);
+}
+
+img {
+  height: 1.5rem;
+  fill: var(--color-white);
+}
+
+.sidebar-container>.option>img {
+  height: 3rem;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.option>p {
+  font-size: 1.25rem;
+  margin: .75rem;
+  font-weight: 600;
 }
