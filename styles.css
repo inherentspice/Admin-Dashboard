@@ -36,9 +36,13 @@ main {
 }
 
 .header-container {
-  height: 20%;
+  height: 25%;
   width: 100%;
   background-color: var(--color-white);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
 }
 
 
@@ -49,8 +53,7 @@ main {
 }
 
 img {
-  height: 1.5rem;
-  fill: var(--color-white);
+  height: 3rem;
 }
 
 .sidebar-container>.option>img {
@@ -67,4 +70,71 @@ img {
   font-size: 1.25rem;
   margin: .75rem;
   font-weight: 600;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 3rem !important;
+  padding: 1rem;
+  grid-column: 1 / 2;
+}
+
+.search-bar>input {
+  width: 80%;
+  border-radius: 10px;
+}
+
+.profile-options {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-right: 3rem !important;
+  padding: 1rem;
+  grid-column: 2/ 3;
+  grid-row: 1/ 2;
+}
+.icon {
+  height: 1.5rem;
+  fill: var(--color-white);
+}
+
+.user-icon {
+  height: 3rem;
+  border-radius: 100%;
+}
+
+.large-user-icon {
+  height: 5rem;
+  border-radius: 100%;
+}
+
+.welcome-container {
+  grid-column: 1 / 2;
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 3rem !important;
+  padding-bottom: 1rem;
+}
+
+.controls-container {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  gap: 2rem;
+
+}
+
+.controls-container>button {
+  width: 6rem;
+  height: 2.5rem;
+  border: none;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 15px;
 }
