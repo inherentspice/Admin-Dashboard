@@ -25,7 +25,6 @@ main {
 }
 
 .sidebar-container {
-  height: 100vh;
   width: 20%;
   background-color: var(--color-blue);
   color: var(--color-white);
@@ -47,9 +46,13 @@ main {
 
 
 .contents-container {
-  height: 100%;
-  width: 100%;
   background-color: var(--color-grey);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(8, 1fr);
+  gap: 1em;
+  padding: 0 1em;
+  max-height: 75vh;
 }
 
 img {
@@ -137,4 +140,71 @@ img {
   border-radius: 50px;
   font-weight: 600;
   font-size: 15px;
+}
+
+.project {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+.announcement {
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+}
+
+.trending {
+  grid-row: 5 / 6;
+  grid-column: 3 / 4;
+}
+
+.project-container-1 {
+  grid-row: 2 / 4;
+  grid-column: 1 / 2;
+}
+
+.project-container-2 {
+  grid-row: 2 / 4;
+  grid-column: 2 / 3;
+}
+
+.project-container-3 {
+  grid-row: 4 / 6;
+  grid-column: 1 / 2;
+}
+
+.project-container-4 {
+  grid-row: 4 / 6;
+  grid-column: 2 / 3;
+}
+
+.project-container-5 {
+  grid-row: 6 / 8;
+  grid-column: 1 / 2;
+}
+
+.project-container-6 {
+  grid-row: 6 / 8;
+  grid-column: 2 / 3;
+}
+
+.cont {
+  border-left: 10px solid #FACC15;
+  border-radius: 10px;
+  background-color: #1992D4;
+  padding: 2rem;
+  color: white;
+}
+
+.cont:hover {
+  border-left: 10px solid #1992D4;
+  border-radius: 10px;
+  background-color: #FACC15;
+  color: black;
+}
+
+.cont>h4 {
+  margin-bottom: 0;
+}
+.cont>p {
+  margin-top: 0;
 }
