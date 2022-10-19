@@ -68,6 +68,11 @@ img {
   display: flex;
   align-items: center;
   gap: 1rem;
+  cursor: pointer;
+}
+
+.option:hover {
+  border: 5px solid var(--color-white);
 }
 
 .option>p {
@@ -141,6 +146,11 @@ img {
   border-radius: 50px;
   font-weight: 600;
   font-size: 15px;
+  cursor: pointer;
+}
+
+.controls-container>button:hover {
+  background-color: var(--color-yellow);
 }
 
 .project {
@@ -202,7 +212,10 @@ img {
   flex-direction: column;
   justify-content: center;
   border-bottom: 1px solid #FACC15;
+}
 
+.announcement-div:hover {
+  background-color: var(--color-yellow);
 }
 
 .announcement-div>h6 {
@@ -219,6 +232,36 @@ img {
 .trending-container {
   grid-row: 6 / 8;
   grid-column: 3 / 4;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+.trending-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.trending-div>img {
+  border-radius: 30%;
+}
+
+.trending-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.trending-text>p {
+  margin: 0;
+  font-weight: 700;
+}
+
+.sub-heading {
+  font-weight: 400 !important;
 }
 .cont {
   border-left: 10px solid #FACC15;
