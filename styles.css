@@ -193,6 +193,29 @@ img {
   grid-column: 3 / 4;
 }
 
+.announcement-div {
+  background-color: #FFFFFF;
+  border-left: 10px solid #FACC15;
+  border-radius: 10px;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid #FACC15;
+
+}
+
+.announcement-div>h6 {
+  margin-bottom: 0;
+  margin-top: 1em;
+  font-size: 13px;
+}
+
+.announcement-div>p {
+  font-size: 11px;
+  margin-top: 0;
+}
+
 .trending-container {
   grid-row: 6 / 8;
   grid-column: 3 / 4;
