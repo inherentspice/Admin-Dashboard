@@ -46,6 +46,7 @@ main {
 
 
 .contents-container {
+  height: inherit;
   background-color: var(--color-grey);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -187,12 +188,24 @@ img {
   grid-column: 2 / 3;
 }
 
+.announcement-container {
+  grid-row: 2 / 4;
+  grid-column: 3 / 4;
+}
+
+.trending-container {
+  grid-row: 6 / 8;
+  grid-column: 3 / 4;
+}
 .cont {
   border-left: 10px solid #FACC15;
   border-radius: 10px;
   background-color: #1992D4;
-  padding: 2rem;
+  padding: 0 2rem;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .cont:hover {
